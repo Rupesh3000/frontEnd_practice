@@ -24,3 +24,36 @@ body {
     border-radius: 10px;
     margin: 100px auto 20px;
 }
+
+h3 {
+    font-weight: 700;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.input-box #task-input {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+
+}
+
+.input-box button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 17px;
+
+}
