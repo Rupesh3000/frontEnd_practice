@@ -12,17 +12,20 @@ body {
 }
 
 .container {
+    padding: 10px 0px;
     height: 100%;
     width: 100%;
+
+
 }
 
 .todo-app {
+    margin: 100px auto 20px;
     width: 100%;
     max-width: 540px;
     background-color: #fff;
     padding: 40px 30px 70px;
     border-radius: 10px;
-    margin: 100px auto 20px;
 }
 
 h3 {
@@ -40,14 +43,15 @@ h3 {
 
 .input-box #task-input {
     padding: 10px;
+    outline: none;
     border: none;
     background: transparent;
     flex: 1;
-    outline: none;
+
 
 }
 
-.input-box button{
+.input-box button {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -57,3 +61,60 @@ h3 {
     font-size: 17px;
 
 }
+
+.task-box {
+    margin-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 19px;
+    padding: 12px 8px 12px 34px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 19px;
+    border: 1px solid black;
+    left: 7px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before {
+    background-color: #ff5945;
+}
+ul li span {
+    position: absolute; 
+    right: 5px;
+    top: 7px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #c2c5cc;
+}
+
+
+
+/* Dark Mode  */
