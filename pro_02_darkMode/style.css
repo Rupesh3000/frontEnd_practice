@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #edf2fc;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.dark-container {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #606163;
+    font-size: 18px;
+}
+
+nav img {
+    width: 100px;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: #ff4321;
+    text-shadow: 0px 0px 25px #ff4321;
+}
+
+.hero-secation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.info-box {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-box h1 {
+    font-size: 60px;
+}
+
+.info-box h1 span {
+    color: #ff4321;
+}
+
+.info-box p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.info-box a {
+    background-color: #212121;
+    display: inline-block;
+    text-decoration-line: none;
+    color: #fff;
+    /* margin: 20px 0;   */
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 18px;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+.links a {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 8px;
+    font-size: 22px;
+}
+
+.links a:hover {
+    color: #ff4321;
+    text-shadow: 0px 0px 25px #ff4321;
+}
+
+.img-box {
+    width: 50%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-box img {
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 40px;
+}
+
+.img-box:hover .up-img {
+    left: 54%;
+}
