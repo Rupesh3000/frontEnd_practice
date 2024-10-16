@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background: linear-gradient(#08182c , #1d5a88);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left ,#right {
+    width: 350px;
+    min-height: 450px;
+    border: 3px dashed #fff;
+    margin: 20px;
+}
+
+.lists {
+    height: 60px;
+    background-color: #e91e63;
+    margin: 15px;
+    font-size: 20px;
+}
